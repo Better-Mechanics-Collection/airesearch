@@ -1,0 +1,9 @@
+version="1.0.0"
+tags={
+	"Gameplay"
+	"Technologies"
+	"Fixes"
+	"Balance"
+}
+name="Better Mechanics : AI Research"
+supported_version="1.18.2.0"
