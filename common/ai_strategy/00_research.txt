@@ -606,7 +606,7 @@ research_support_techs_3_majors = {
 	enable = {
 		date > 1938.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -662,7 +662,7 @@ research_support_techs_5_majors = {
 	enable = {
 		date > 1940.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -718,7 +718,7 @@ research_support_techs_7_majors = {
 	enable = {
 		date > 1943.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -769,7 +769,7 @@ research_support_techs_9_majors = {
 	enable = {
 		date > 1946.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -788,7 +788,7 @@ research_light_tanks = {
 	enable = {
 		date > 1937.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -848,7 +848,7 @@ research_basic_medium_tank = {
 	enable = {
 		date > 1938.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -868,13 +868,7 @@ research_basic_heavy_tank = {
 	enable = {
 		date > 1937.1.1
 		is_major = yes
-		OR = {
-			is_eligible_for_heavy_armor_production = yes
-			AND = {
-				is_eligible_for_armor_production = yes
-				has_global_flag = SpaceMarines
-			}
-		}
+		num_of_military_factories > 50
 	}
 	abort_when_not_enabled = yes
 
@@ -894,7 +888,7 @@ research_mech = {
 	enable = {
 		date > 1939.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -914,7 +908,7 @@ research_improved_medium_tank = {
 	enable = {
 		date > 1940.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -934,13 +928,7 @@ research_improved_heavy_tank = {
 	enable = {
 		date > 1940.1.1
 		is_major = yes
-		OR = {
-			is_eligible_for_heavy_armor_production = yes
-			AND = {
-				is_eligible_for_armor_production = yes
-				has_global_flag = SpaceMarines
-			}
-		}
+		num_of_military_factories > 50
 	}
 	abort_when_not_enabled = yes
 
@@ -960,7 +948,7 @@ research_advanced_medium_tank = {
 	enable = {
 		date > 1943.1.1
 		is_major = yes
-		is_eligible_for_improved_armor_production = yes
+		num_of_military_factories > 60
 	}
 	abort_when_not_enabled = yes
 
@@ -1000,13 +988,7 @@ research_advanced_heavy_tank = {
 	enable = {
 		date > 1943.1.1
 		is_major = yes
-		OR = {
-			is_eligible_for_improved_heavy_armor_production = yes
-			AND = {
-				is_eligible_for_armor_production = yes
-				has_global_flag = SpaceMarines
-			}
-		}
+		num_of_military_factories > 75
 	}
 	abort_when_not_enabled = yes
 
@@ -1026,7 +1008,7 @@ research_modern_tank = {
 	enable = {
 		date > 1945.1.1
 		is_major = yes
-		is_eligible_for_improved_armor_production = yes
+		num_of_military_factories > 60
 	}
 	abort_when_not_enabled = yes
 
@@ -1051,8 +1033,8 @@ research_amphibious_techs_1 = {
 	enable = {
 		date > 1941.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
-		is_naval_power = yes
+		num_of_military_factories > 30
+		has_navy_size = { size > 100 }
 	}
 	abort_when_not_enabled = yes
 
@@ -1077,8 +1059,8 @@ research_amphibious_techs_2 = {
 	enable = {
 		date > 1943.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
-		is_naval_power = yes
+		num_of_military_factories > 30
+		has_navy_size = { size > 100 }
 	}
 	abort_when_not_enabled = yes
 
@@ -1097,7 +1079,7 @@ research_fighter_and_cas_1 = {
 	enable = {
 		date > 1937.1.1
 		is_major = yes
-		is_eligible_for_light_aircraft_production = yes
+		num_of_military_factories > 25
 	}
 	abort_when_not_enabled = yes
 
@@ -1152,7 +1134,7 @@ research_plane_modules = {
 	enable = {
 		date > 1938.1.1
 		is_major = yes
-		is_eligible_for_light_aircraft_production = yes
+		num_of_military_factories > 25
 	}
 	abort_when_not_enabled = yes
 
@@ -1177,7 +1159,7 @@ research_fighter_and_cas_2 = {
 	enable = {
 		date > 1939.1.1
 		is_major = yes
-		is_eligible_for_improved_light_aircraft_production = yes
+		num_of_military_factories > 25
 	}
 	abort_when_not_enabled = yes
 
@@ -1212,7 +1194,7 @@ research_fighter_and_cas_3 = {
 	enable = {
 		date > 1944.1.1
 		is_major = yes
-		is_eligible_for_improved_light_aircraft_production = yes
+		num_of_military_factories > 25
 	}
 	abort_when_not_enabled = yes
 
@@ -1256,7 +1238,7 @@ research_tac_1 = {
 	enable = {
 		date > 1937.1.1
 		is_major = yes
-		is_eligible_for_medium_aircraft_production = yes
+		num_of_military_factories > 75
 		has_doctrine = new_operational_integrity
 	}
 	abort_when_not_enabled = yes
@@ -1287,7 +1269,7 @@ research_tac_2 = {
 	enable = {
 		date > 1940.1.1
 		is_major = yes
-		is_eligible_for_medium_aircraft_production = yes
+		num_of_military_factories > 75
 		has_doctrine = new_operational_integrity
 	}
 	abort_when_not_enabled = yes
@@ -1308,7 +1290,7 @@ research_tac_3 = {
 	enable = {
 		date > 1944.1.1
 		is_major = yes
-		is_eligible_for_medium_aircraft_production = yes
+		num_of_military_factories > 75
 		has_doctrine = new_operational_integrity
 	}
 	abort_when_not_enabled = yes
@@ -1329,7 +1311,7 @@ research_strat_1 = {
 	enable = {
 		date > 1937.1.1
 		is_major = yes
-		is_eligible_for_heavy_aircraft_production = yes
+		num_of_military_factories > 125
 		has_doctrine = new_strategic_destruction
 	}
 	abort_when_not_enabled = yes
@@ -1355,7 +1337,7 @@ research_strat_2 = {
 	enable = {
 		date > 1940.1.1
 		is_major = yes
-		is_eligible_for_heavy_aircraft_production = yes
+		num_of_military_factories > 125
 		has_doctrine = new_strategic_destruction
 	}
 	abort_when_not_enabled = yes
@@ -1376,7 +1358,7 @@ research_strat_3 = {
 	enable = {
 		date > 1944.1.1
 		is_major = yes
-		is_eligible_for_heavy_aircraft_production = yes
+		num_of_military_factories > 125
 		has_doctrine = new_strategic_destruction
 	}
 	abort_when_not_enabled = yes
@@ -1400,7 +1382,7 @@ research_strat_3 = {
 research_basic_trains = {
 	enable = {
 		date > 1937.1.1
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -1415,7 +1397,7 @@ research_armored_trains = {
 	enable = {
 		date > 1937.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -1430,7 +1412,7 @@ research_railway_guns = {
 	enable = {
 		date > 1939.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -1475,7 +1457,7 @@ research_le_funny_katyusha = {
 	enable = {
 		date > 1942.1.1
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 		OR = {
 			has_doctrine = new_mobile_warfare
 			has_doctrine = mass_assault
@@ -1499,7 +1481,7 @@ research_armored_support_1 = {
 	enable = {
 		date > 1940.1.1
 		is_major = yes
-		is_eligible_for_heavy_armor_production = yes
+		num_of_military_factories > 50
 		is_special_project_completed = sp:sp_land_military_engineering_vehicles
 	}
 	abort_when_not_enabled = yes
@@ -1515,7 +1497,7 @@ research_armored_support_2 = {
 	enable = {
 		date > 1944.1.1
 		is_major = yes
-		is_eligible_for_improved_armor_production = yes
+		num_of_military_factories > 60
 		is_special_project_completed = sp:sp_land_military_engineering_vehicles
 	}
 	abort_when_not_enabled = yes
