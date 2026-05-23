@@ -6,4 +6,4 @@ tags={
 	"Balance"
 }
 name="Better Mechanics : AI Research"
-supported_version="1.18.2.0"
+supported_version="1.*"

@@ -6,5 +6,5 @@ tags={
 	"Balance"
 }
 name="Better Mechanics : AI Research"
-supported_version="1.18.2.0"
+supported_version="1.*"
 path="C:/Users/omart/OneDrive/Documents/Paradox Interactive/Hearts of Iron IV/mod/airesearch"
