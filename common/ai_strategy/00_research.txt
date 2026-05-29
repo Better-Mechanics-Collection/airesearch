@@ -1150,7 +1150,7 @@ research_plane_modules = {
 	}
 	ai_strategy = {
 		type = research_tech
-		id = survivability_studies
+		id = aa_hmg
 		value = 100
 	}
 }
@@ -1165,7 +1165,7 @@ research_fighter_and_cas_2 = {
 
 	ai_strategy = {
 		type = research_tech
-		id = aa_hmg
+		id = survivability_studies
 		value = 100
 	}
 	ai_strategy = {
