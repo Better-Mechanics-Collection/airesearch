@@ -1375,6 +1375,66 @@ research_strat_3 = {
 	}
 }
 
+research_transport_1 = {
+	enable = {
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 23 }
+		is_major = yes
+		num_of_military_factories > 125
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_tech
+		id = bba_early_transport_plane
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = early_transport_plane
+		value = 100
+	}
+}
+
+research_transport_2 = {
+	enable = {
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 71 }
+		is_major = yes
+		num_of_military_factories > 125
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_tech
+		id = bba_improved_transport_plane
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = improved_transport_plane
+		value = 100
+	}
+}
+
+research_transport_3 = {
+	enable = {
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 107 }
+		is_major = yes
+		num_of_military_factories > 125
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_tech
+		id = bba_strategic_airlifter
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = strategic_airlifter
+		value = 100
+	}
+}
+
 ####################################################################################################
 #	OTHER
 ####################################################################################################
