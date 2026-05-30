@@ -1377,7 +1377,7 @@ research_strat_3 = {
 
 research_transport_1 = {
 	enable = {
-		date > 1938.1.1
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 23 }
 		is_major = yes
 		is_eligible_for_heavy_aircraft_production = yes
 	}
@@ -1397,7 +1397,7 @@ research_transport_1 = {
 
 research_transport_2 = {
 	enable = {
-		date > 1942.1.1
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 71 }
 		is_major = yes
 		is_eligible_for_heavy_aircraft_production = yes
 	}
@@ -1417,7 +1417,7 @@ research_transport_2 = {
 
 research_transport_3 = {
 	enable = {
-		date > 1945.1.1
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 107 }
 		is_major = yes
 		is_eligible_for_heavy_aircraft_production = yes
 	}
