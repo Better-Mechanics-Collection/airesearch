@@ -7,5 +7,5 @@ tags={
 }
 name="Better Mechanics : AI Research"
 picture="thumbnail.png"
-supported_version="1.*"
+supported_version="1.*.*"
 remote_file_id="3731538127"
