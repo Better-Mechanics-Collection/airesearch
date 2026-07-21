@@ -1334,10 +1334,7 @@ research_torpedoes_1 = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 11 }
 		is_major = yes
-		OR = {
-			is_eligible_for_naval_aircraft_production = yes
-			is_eligible_for_cv_aircraft_production = yes
-		}
+		has_navy_size = { unit = carrier size > 0 }
 	}
 	abort_when_not_enabled = yes
 
@@ -1352,10 +1349,7 @@ research_torpedoes_2 = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 47 }
 		is_major = yes
-		OR = {
-			is_eligible_for_naval_aircraft_production = yes
-			is_eligible_for_cv_aircraft_production = yes
-		}
+		has_navy_size = { unit = carrier size > 0 }
 	}
 	abort_when_not_enabled = yes
 
@@ -1370,10 +1364,7 @@ research_torpedoes_3 = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 95 }
 		is_major = yes
-		OR = {
-			is_eligible_for_naval_aircraft_production = yes
-			is_eligible_for_cv_aircraft_production = yes
-		}
+		has_navy_size = { unit = carrier size > 0 }
 	}
 	abort_when_not_enabled = yes
 
