@@ -1547,6 +1547,22 @@ research_le_funny_katyusha = {
 	}
 }
 
+research_advanced_flames = {
+	enable = {
+		date > 1941.1.1
+		is_major = yes
+		is_eligible_for_armor_production = yes
+		is_special_project_completed = sp:sp_land_flamethrower_tank
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_tech
+		id = sp_armored_advanced_flamethrower_tech
+		value = 100
+	}
+}
+
 research_armored_support_1 = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 47 }
