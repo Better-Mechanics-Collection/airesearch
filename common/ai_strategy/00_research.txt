@@ -25,6 +25,11 @@ research_industry_techs_1 = {
 		id = construction1
 		value = 100
 	}
+	ai_strategy = {
+		type = research_weight_factor
+		id = dispersed_industry 
+		value = -1000
+	}
 }
 
 research_industry_techs_2 = {
