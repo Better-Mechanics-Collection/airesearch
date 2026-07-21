@@ -1549,9 +1549,9 @@ research_le_funny_katyusha = {
 
 research_advanced_flames = {
 	enable = {
-		date > 1941.1.1
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 59 }
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 		is_special_project_completed = sp:sp_land_flamethrower_tank
 	}
 	abort_when_not_enabled = yes
