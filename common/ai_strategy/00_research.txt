@@ -22,11 +22,6 @@ research_industry_techs_1 = {
 	}
 	ai_strategy = {
 		type = research_tech
-		id = dispersed_industry
-		value = 100
-	}
-	ai_strategy = {
-		type = research_tech
 		id = construction1
 		value = 100
 	}
@@ -46,11 +41,6 @@ research_industry_techs_2 = {
 	ai_strategy = {
 		type = research_tech
 		id = concentrated_industry2
-		value = 100
-	}
-	ai_strategy = {
-		type = research_tech
-		id = dispersed_industry2
 		value = 100
 	}
 	ai_strategy = {
@@ -78,11 +68,6 @@ research_industry_techs_3 = {
 	}
 	ai_strategy = {
 		type = research_tech
-		id = dispersed_industry3
-		value = 100
-	}
-	ai_strategy = {
-		type = research_tech
 		id = construction3
 		value = 100
 	}
@@ -106,11 +91,6 @@ research_industry_techs_4 = {
 	}
 	ai_strategy = {
 		type = research_tech
-		id = dispersed_industry4
-		value = 100
-	}
-	ai_strategy = {
-		type = research_tech
 		id = construction4
 		value = 100
 	}
@@ -130,11 +110,6 @@ research_industry_techs_5 = {
 	ai_strategy = {
 		type = research_tech
 		id = concentrated_industry5
-		value = 100
-	}
-	ai_strategy = {
-		type = research_tech
-		id = dispersed_industry5
 		value = 100
 	}
 	ai_strategy = {
