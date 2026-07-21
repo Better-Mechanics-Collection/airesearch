@@ -862,6 +862,16 @@ research_basic_medium_tank = {
 		id = basic_medium_tank
 		value = 100
 	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_1
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_1
+		value = 100
+	}
 }
 
 research_basic_heavy_tank = {
@@ -920,6 +930,16 @@ research_improved_medium_tank = {
 	ai_strategy = {
 		type = research_tech
 		id = improved_medium_tank
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_2
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_2
 		value = 100
 	}
 }
@@ -982,6 +1002,16 @@ research_advanced_medium_tank = {
 		id = advanced_radio
 		value = 100
 	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_3
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_3
+		value = 100
+	}
 }
 
 research_advanced_heavy_tank = {
@@ -1025,6 +1055,16 @@ research_modern_tank = {
 	ai_strategy = {
 		type = research_tech
 		id = mechanised_infantry3
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_4
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_4
 		value = 100
 	}
 }
