@@ -1368,7 +1368,7 @@ research_torpedoes_2 = {
 
 research_torpedoes_3 = {
 	enable = {
-		date > 1944.1.1
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 95 }
 		is_major = yes
 		OR = {
 			is_eligible_for_naval_aircraft_production = yes
