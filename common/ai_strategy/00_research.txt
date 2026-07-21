@@ -1589,6 +1589,21 @@ research_transport_3 = {
 	}
 }
 
+research_scout_planes = {
+	enable = {
+		date > 1940.1.1
+		is_major = yes
+		is_eligible_for_medium_aircraft_production = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_tech
+		id = photo_reconnaisance
+		value = 100
+	}
+}
+
 ####################################################################################################
 #	OTHER
 ####################################################################################################
