@@ -439,7 +439,7 @@ research_mountaineers_3 = {
 research_marines_1 = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 11 }
-		is_naval_power = yes
+		has_navy_size = { size > 100 }
 	}
 	abort_when_not_enabled = yes
 
@@ -453,7 +453,7 @@ research_marines_1 = {
 research_marines_2 = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 47 }
-		is_naval_power = yes
+		has_navy_size = { size > 100 }
 		OR = {
 			has_doctrine = marines_1
 			has_doctrine = marines_2
@@ -471,7 +471,7 @@ research_marines_2 = {
 research_marines_3 = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 83 }
-		is_naval_power = yes
+		has_navy_size = { size > 100 }
 		OR = {
 			has_doctrine = marines_1
 			has_doctrine = marines_2
