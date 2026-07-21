@@ -1515,9 +1515,9 @@ research_silly_armored_cars = {
 
 research_rockets = {
 	enable = {
-		date > 1941.1.1
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 59 }
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 	}
 	abort_when_not_enabled = yes
 
@@ -1530,9 +1530,9 @@ research_rockets = {
 
 research_le_funny_katyusha = {
 	enable = {
-		date > 1942.1.1
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 71 }
 		is_major = yes
-		is_eligible_for_armor_production = yes
+		num_of_military_factories > 30
 		OR = {
 			has_doctrine = new_mobile_warfare
 			has_doctrine = mass_assault
