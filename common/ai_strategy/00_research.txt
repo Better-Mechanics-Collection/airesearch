@@ -842,6 +842,16 @@ research_basic_medium_tank = {
 		id = basic_medium_tank
 		value = 100
 	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_1
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_1
+		value = 100
+	}
 }
 
 research_basic_heavy_tank = {
@@ -900,6 +910,16 @@ research_improved_medium_tank = {
 	ai_strategy = {
 		type = research_tech
 		id = improved_medium_tank
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_2
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_2
 		value = 100
 	}
 }
@@ -962,6 +982,16 @@ research_advanced_medium_tank = {
 		id = advanced_radio
 		value = 100
 	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_3
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_3
+		value = 100
+	}
 }
 
 research_advanced_heavy_tank = {
@@ -1005,6 +1035,16 @@ research_modern_tank = {
 	ai_strategy = {
 		type = research_tech
 		id = mechanised_infantry3
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = armor_tech_4
+		value = 100
+	}
+	ai_strategy = {
+		type = research_tech
+		id = engine_tech_4
 		value = 100
 	}
 }
@@ -1493,6 +1533,21 @@ research_silly_armored_cars = {
 	}
 }
 
+research_rockets = {
+	enable = {
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 59 }
+		is_major = yes
+		num_of_military_factories > 30
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = research_tech
+		id = rocket_artillery
+		value = 100
+	}
+}
+
 research_le_funny_katyusha = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 71 }
@@ -1507,12 +1562,23 @@ research_le_funny_katyusha = {
 
 	ai_strategy = {
 		type = research_tech
-		id = rocket_artillery
+		id = motorized_rocket_unit
 		value = 100
 	}
+}
+
+research_advanced_flames = {
+	enable = {
+		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 59 }
+		is_major = yes
+		num_of_military_factories > 30
+		is_special_project_completed = sp:sp_land_flamethrower_tank
+	}
+	abort_when_not_enabled = yes
+
 	ai_strategy = {
 		type = research_tech
-		id = motorized_rocket_unit
+		id = sp_armored_advanced_flamethrower_tech
 		value = 100
 	}
 }
