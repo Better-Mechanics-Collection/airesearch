@@ -1513,15 +1513,11 @@ research_silly_armored_cars = {
 	}
 }
 
-research_le_funny_katyusha = {
+research_rockets = {
 	enable = {
-		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 71 }
+		date > 1941.1.1
 		is_major = yes
-		num_of_military_factories > 30
-		OR = {
-			has_doctrine = new_mobile_warfare
-			has_doctrine = mass_assault
-		}
+		is_eligible_for_armor_production = yes
 	}
 	abort_when_not_enabled = yes
 
@@ -1530,6 +1526,20 @@ research_le_funny_katyusha = {
 		id = rocket_artillery
 		value = 100
 	}
+}
+
+research_le_funny_katyusha = {
+	enable = {
+		date > 1942.1.1
+		is_major = yes
+		is_eligible_for_armor_production = yes
+		OR = {
+			has_doctrine = new_mobile_warfare
+			has_doctrine = mass_assault
+		}
+	}
+	abort_when_not_enabled = yes
+
 	ai_strategy = {
 		type = research_tech
 		id = motorized_rocket_unit
