@@ -1584,7 +1584,7 @@ research_scout_planes = {
 	enable = {
 		check_variable = { global.BM_AI_RESEARCH_elapsed_months > 47 }
 		is_major = yes
-		is_eligible_for_medium_aircraft_production = yes
+		num_of_military_factories > 75
 	}
 	abort_when_not_enabled = yes
 
